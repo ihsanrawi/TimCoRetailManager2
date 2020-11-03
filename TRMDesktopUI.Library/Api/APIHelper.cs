@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TRMDesktopUI.Models;
 
-namespace TRMDesktopUI.Helpers
+namespace TRMDesktopUI.Library.Api
 {
     public class APIHelper : IAPIHelper
     {
