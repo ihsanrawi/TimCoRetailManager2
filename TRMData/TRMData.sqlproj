@@ -62,4 +62,11 @@
     <Folder Include="dbo\Stored Procedures" />
     <Folder Include="Publish Locations" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Inventory.sql" />
+    <Build Include="dbo\Tables\Product.sql" />
+    <Build Include="dbo\Tables\Sale.sql" />
+    <Build Include="dbo\Tables\SaleDetail.sql" />
+    <Build Include="dbo\Tables\User.sql" />
+  </ItemGroup>
 </Project>
