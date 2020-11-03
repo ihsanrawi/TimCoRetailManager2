@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRMDataManager", "TRMDataManager\TRMDataManager.csproj", "{C25BD86A-5B54-4822-B2B6-7709A8591ADD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C25BD86A-5B54-4822-B2B6-7709A8591ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C25BD86A-5B54-4822-B2B6-7709A8591ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C25BD86A-5B54-4822-B2B6-7709A8591ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C25BD86A-5B54-4822-B2B6-7709A8591ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB2C19D6-5D16-4D8C-9800-09C5E3271053}
+	EndGlobalSection
+EndGlobal
