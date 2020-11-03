@@ -1,6 +1,7 @@
 # TimCoRetailManager2
 TimCo Retail Manager Course by IAmTimCorey at Youtube
 
+# Course Structure
 Creating a WebAPI with Authentication 	(/)
 Configuring Swagger in WebAPI 			(/)
 Added SQL Database Project				(/)
@@ -10,3 +11,4 @@ SQL Database Table Creation				(/)
 WPF Login Form Creation					(/)
 Wire Up the WPF Login form to the API	(/)
 Login Form Error Handling				(/)
+Getting User Data 						(/)
