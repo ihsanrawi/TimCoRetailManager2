@@ -84,6 +84,7 @@ namespace TRMDesktopUI.ViewModels
                 return output;
             }
         }
+
         public async Task LogIn()
         {
             try

@@ -1,5 +1,5 @@
 # TimCoRetailManager2
-TimCo Retail Manager Course by IAmTimCorey at Youtube
+TimCo Retail Manager Course by IAmTimCorey in Youtube https://www.youtube.com/playlist?list=PLLWMQd6PeGY0bEMxObA6dtYXuJOGfxSPx
 
 # Course Structure
 Creating a WebAPI with Authentication 	(/)
@@ -12,3 +12,4 @@ WPF Login Form Creation					(/)
 Wire Up the WPF Login form to the API	(/)
 Login Form Error Handling				(/)
 Getting User Data 						(/)
+Sales Page Creation						(/)
