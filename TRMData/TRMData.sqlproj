@@ -69,6 +69,7 @@
     <Build Include="dbo\Tables\SaleDetail.sql" />
     <Build Include="dbo\Tables\User.sql" />
     <Build Include="dbo\Stored Procedures\spUserLookup.sql" />
+    <Build Include="dbo\Stored Procedures\spProduct_GetAll.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Publish Locations\TRMData.publish.xml" />
