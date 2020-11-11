@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TRMDataManager.Library.Internal.DataAccess;
 using TRMDataManager.Library.Internal.Models;
 
@@ -29,7 +26,7 @@ namespace TRMDataManager.Library.DataAccess
                 // Get information about this product
                 var productInfo = products.GetProductById(detail.ProductId);
 
-                if(productInfo == null)
+                if (productInfo == null)
                 {
                     throw new Exception($"The product Id of {detail.ProductId} could not be found in the database");
                 }
@@ -55,21 +52,36 @@ namespace TRMDataManager.Library.DataAccess
 
             sale.Total = sale.SubTotal + sale.Tax;
 
-            //Save the model
-            SqlDataAccess sql = new SqlDataAccess();
-            sql.SaveData<SaleDBModel>("dbo.spSale_Insert", sale, "TRMData");
-
-            // Get the Id from the sale model
-            sale.Id = sql.LoadData<int, dynamic>("dbo.spSale_Lookup", new { CashierId = sale.CashierId, SaleDate = sale.SaleDate }, "TRMData").FirstOrDefault();
-
-            // Finish filling in the sale details models
-            foreach (var item in details)
+            using (SqlDataAccess sql = new SqlDataAccess())
             {
-                item.SaleId = sale.Id;
+                try
+                {
+                    sql.StartTransaction("TRMData");
+                    //Save the model
+                    sql.SaveDataInTransaction<SaleDBModel>("dbo.spSale_Insert", sale);
 
-                // Save the sale details models
-                sql.SaveData("dbo.spSaleDetail_Insert", item, "TRMData");
+                    // Get the Id from the sale model
+                    sale.Id = sql.LoadDataInTransaction<int, dynamic>("dbo.spSale_Lookup", new { CashierId = sale.CashierId, SaleDate = sale.SaleDate }).FirstOrDefault();
+
+                    // Finish filling in the sale details models
+                    foreach (var item in details)
+                    {
+                        item.SaleId = sale.Id;
+
+                        // Save the sale details models
+                        sql.SaveDataInTransaction("dbo.spSaleDetail_Insert", item);
+                    }
+                    //Can explicitly call but it will implicitly close after using statment finished.
+                    sql.CommitTransaction();
+                }
+                catch
+                {
+                    sql.RollbackTransaction();
+                    throw;
+                }
             }
+
+            
         }
     }
 }
