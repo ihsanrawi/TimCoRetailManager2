@@ -70,6 +70,10 @@
     <Build Include="dbo\Tables\User.sql" />
     <Build Include="dbo\Stored Procedures\spUserLookup.sql" />
     <Build Include="dbo\Stored Procedures\spProduct_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\spProduct_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spSale_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spSaleDetail_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spSale_Lookup.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Publish Locations\TRMData.publish.xml" />
