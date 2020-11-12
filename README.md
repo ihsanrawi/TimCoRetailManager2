@@ -28,4 +28,5 @@ Adding Roles to the API					(/)
 User Permissions and Error Handling		(/)
 Displaying Users and Groups/Roles		(/)
 Managing User Roles						(/)
+Upgrading to .NET Core: Front-End Class Library	(/)
 	
