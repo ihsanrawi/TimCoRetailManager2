@@ -29,4 +29,5 @@ User Permissions and Error Handling		(/)
 Displaying Users and Groups/Roles		(/)
 Managing User Roles						(/)
 Upgrading to .NET Core: Front-End Class Library	(/)
+Upgrading to .NET Core: Back-End Class Library	(/)
 	
