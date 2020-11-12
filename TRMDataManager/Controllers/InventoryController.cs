@@ -13,6 +13,7 @@ namespace TRMDataManager.Controllers
     public class InventoryController : ApiController
     {
         // api/Inventory
+        [Authorize(Roles = "Manager,Admin")]
         public List<InventoryModel> Get()
         {
             InventoryData data = new InventoryData();
@@ -20,6 +21,9 @@ namespace TRMDataManager.Controllers
         }
 
         // api/Inventory
+        //This is a AND relationship
+        //[Authorize(Roles = "WarehouseWorker")]
+        [Authorize(Roles = "Admin")]
         public void Post(InventoryModel item)
         {
             InventoryData data = new InventoryData();
