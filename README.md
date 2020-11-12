@@ -27,3 +27,5 @@ Admin Endpoints in WebAPI				(/)
 Adding Roles to the API					(/)
 User Permissions and Error Handling		(/)
 Displaying Users and Groups/Roles		(/)
+Managing User Roles						(/)
+	
