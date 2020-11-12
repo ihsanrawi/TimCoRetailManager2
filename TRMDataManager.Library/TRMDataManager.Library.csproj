@@ -46,14 +46,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigHelper.cs" />
+    <Compile Include="DataAccess\InventoryData.cs" />
     <Compile Include="DataAccess\ProductData.cs" />
     <Compile Include="DataAccess\SaleData.cs" />
     <Compile Include="DataAccess\UserData.cs" />
+    <Compile Include="Internal\Models\InventoryModel.cs" />
     <Compile Include="Internal\Models\ProductModel.cs" />
     <Compile Include="Internal\Models\SaleDBModel.cs" />
     <Compile Include="Internal\Models\SaleDetailDBModel.cs" />
     <Compile Include="Internal\Models\SaleDetailModel.cs" />
     <Compile Include="Internal\Models\SaleModel.cs" />
+    <Compile Include="Internal\Models\SaleReportModel.cs" />
     <Compile Include="Internal\Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Internal\DataAccess\SqlDataAccess.cs" />
