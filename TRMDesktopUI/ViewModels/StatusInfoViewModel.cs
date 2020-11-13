@@ -23,7 +23,7 @@ namespace TRMDesktopUI.ViewModels
 
         public void close()
         {
-            TryClose();
+            TryCloseAsync();
         }
     }
 }
