@@ -6,7 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
-    <PackageReference Include="Caliburn.Micro" Version="4.0.100-alpha" />
+    <PackageReference Include="Caliburn.Micro" Version="4.0.105-alpha" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TRMDesktopUI.Library\TRMDesktopUI.Library.csproj" />
