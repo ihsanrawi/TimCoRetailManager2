@@ -17,3 +17,7 @@ Phase 2 Roadmap
 5. Move database to Azure SQL
 6. Deploy the desktop app to Azure Blob storage
 7. Web-based inventory system
+
+Server=tcp:timcodatabase.database.windows.net,1433;Initial Catalog=TimCoData;Persist Security Info=False;User ID=timcoadmin;Password=Password@1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
+Server=tcp:timcodatabase.database.windows.net,1433;Initial Catalog=TimCoAuth;Persist Security Info=False;User ID=timcoadmin;Password=Password@1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
