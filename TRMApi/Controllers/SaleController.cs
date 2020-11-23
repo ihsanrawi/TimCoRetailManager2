@@ -44,5 +44,13 @@ namespace TRMApi.Controllers
         {
             return _saleData.GetSaleReports();
         }
+
+        [AllowAnonymous]
+        [Route("GetTaxReport")]
+        [HttpGet]
+        public decimal GetTaxReports()
+        {
+            return _saleData.GetTaxRate();
+        }
     }
 }
