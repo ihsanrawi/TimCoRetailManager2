@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using TRMDataManager.Library.Internal.Models;
+using TRMDataManager.Library.Models;
 
 namespace TRMDataManager.Library.DataAccess
 {

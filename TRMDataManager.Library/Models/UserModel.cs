@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TRMDataManager.Library.Internal.Models
+namespace TRMDataManager.Library.Models
 {
     public class UserModel
     {

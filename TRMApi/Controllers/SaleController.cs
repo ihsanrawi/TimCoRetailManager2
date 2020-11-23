@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using TRMDataManager.Library.DataAccess;
-using TRMDataManager.Library.Internal.Models;
+using TRMDataManager.Library.Models;
 
 namespace TRMApi.Controllers
 {

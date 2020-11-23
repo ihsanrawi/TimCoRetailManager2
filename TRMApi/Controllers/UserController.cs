@@ -13,7 +13,7 @@ using Microsoft.Extensions.Logging;
 using TRMApi.Data;
 using TRMApi.Models;
 using TRMDataManager.Library.DataAccess;
-using TRMDataManager.Library.Internal.Models;
+using TRMDataManager.Library.Models;
 
 namespace TRMApi.Controllers
 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace TRMDataManager.Library.Internal.Models
+namespace TRMDataManager.Library.Models
 {
     public class SaleModel
     {
